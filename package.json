@@ -1,6 +1,6 @@
 {
   "name": "ap-score-processor-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AP score pre-processor (for Node)",
   "engines": {
     "node": ">= 14.4"
