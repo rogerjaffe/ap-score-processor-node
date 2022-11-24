@@ -11,6 +11,10 @@ import getScores from "./parsers/getScores";
 import combineDataGroups from "./utils/combineDataGroups";
 import getAwards from "./parsers/getAwards";
 import prepForSave from "./utils/prepForSave";
+import { config2021 } from "./config/config-2021";
+import { config2020 } from "./config/config-2020";
+import { config2019 } from "./config/config-2019";
+import { config2018 } from "./config/config-2018";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Papa = require("papaparse");
@@ -22,6 +26,10 @@ const OUTPUT_DIR = 4;
 const DEFAULT_OUTPUT_PATH = "../../output/";
 const configFiles = {
   "2022": config2022,
+  "2021": config2021,
+  "2020": config2020,
+  "2019": config2019,
+  "2018": config2018,
 };
 const USAGE_HELP = "Usage: node main <year> <data-file> <output-folder>";
 
