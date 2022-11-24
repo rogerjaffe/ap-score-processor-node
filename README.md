@@ -55,4 +55,10 @@ Since students may receive more than one award over their AP career, awards are 
 
 #### References
 
-<span style="font-size:0.75rem">Node Typescript template forked from `https://github.com/jsynowiec/node-typescript-boilerplate/`</span>
+* [2022 AP score report layout format](`https://apcentral.collegeboard.org/media/pdf/ap-datafile-layout-2022.pdf`)
+* [2021 AP score report layout format](`https://apcentral.collegeboard.org/media/pdf/ap-datafile-layout-2021_2.pdf`)
+* [2020 AP score report layout format](`https://apcentral.collegeboard.org/media/pdf/ap-datafile-layout-2020.pdf`)
+* [2019 AP score report layout format](`https://apcentral.collegeboard.org/media/pdf/ap-student-data-record-layout-2019.pdf`)
+* [2018 AP score report layout format](`https://apcentral.collegeboard.org/media/pdf/ap-student-data-record-layout-2018.pdf`)
+
+* [Node Typescript template<span style="font-size:0.75rem">Node Typescript template forked from `https://github.com/jsynowiec/node-typescript-boilerplate/`</span>
