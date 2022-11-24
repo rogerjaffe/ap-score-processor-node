@@ -3,7 +3,6 @@
 //  year is between 2018 and 2022
 
 import { readFileSync } from "fs";
-import { config2022 } from "./config/config-2022";
 import getStudents from "./parsers/getStudents";
 import getEthnicities from "./parsers/getEthnicities";
 import spreadAcross from "./utils/spreadAcross";
@@ -11,6 +10,7 @@ import getScores from "./parsers/getScores";
 import combineDataGroups from "./utils/combineDataGroups";
 import getAwards from "./parsers/getAwards";
 import prepForSave from "./utils/prepForSave";
+import { config2022 } from "./config/config-2022";
 import { config2021 } from "./config/config-2021";
 import { config2020 } from "./config/config-2020";
 import { config2019 } from "./config/config-2019";
@@ -81,7 +81,11 @@ if (parsedCsv[parsedCsv.length - 1].length < 2) {
 console.info("Processing students");
 const students = getStudents(parsedCsv, configFile.fields);
 console.info("Processing ethnicity group");
-const ethnicityGroup = getEthnicities(configFile.ethnicityData, parsedCsv);
+const ethnicityGroup = getEthnicities(
+  configFile.ethnicityData,
+  configYear,
+  parsedCsv
+);
 const ethnicities = spreadAcross(students, ethnicityGroup);
 console.info("Processing score group");
 const scoreGroup = getScores(configFile.scoreData, parsedCsv);
