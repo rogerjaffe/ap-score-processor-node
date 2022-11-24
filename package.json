@@ -1,9 +1,9 @@
 {
-  "name": "node-typescript-jest-template",
-  "version": "0.0.0",
-  "description": "",
+  "name": "ap-score-processor-node",
+  "version": "0.1.0",
+  "description": "AP score pre-processor (for Node)",
   "engines": {
-    "node": ">= 14.4 <15"
+    "node": ">= 14.4"
   },
   "devDependencies": {
     "@types/jest": "~26.0.19",
@@ -30,7 +30,7 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <github@jakubsynowiec.info>",
+  "author": "Roger Jaffe <rogerjaffe@gmail.com> (https://www.mrjaffesclass.com)",
   "license": "Apache-2.0",
   "dependencies": {
     "date-fns": "^2.29.3",

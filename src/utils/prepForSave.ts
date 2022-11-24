@@ -1,6 +1,9 @@
-import { writeFileSync } from "fs";
+import { writeFileSync, existsSync, mkdirSync } from "fs";
 
 const prepForSave = (content: TProcessed, type: string, outputPath: string) => {
+  if (!existsSync(outputPath)) {
+    mkdirSync(outputPath, { recursive: true });
+  }
   const contentArray = content.data.map((d) => d.join(","));
   const contentString = contentArray.join("\n");
   const headerString = content.header.join(",");

@@ -23,7 +23,7 @@ const Papa = require("papaparse");
 const CONFIG_YEAR = 2;
 const DATA_FILE = 3;
 const OUTPUT_DIR = 4;
-const DEFAULT_OUTPUT_PATH = "../../output/";
+const DEFAULT_OUTPUT_PATH = "../../output";
 const configFiles = {
   "2022": config2022,
   "2021": config2021,
