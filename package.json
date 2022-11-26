@@ -1,9 +1,13 @@
 {
   "name": "ap-score-processor-node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "AP score pre-processor (for Node)",
   "engines": {
     "node": ">= 14.20"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https//github.com/rogerjaffe/ap-score-processor-node.git"
   },
   "devDependencies": {
     "@types/jest": "~26.0.19",
